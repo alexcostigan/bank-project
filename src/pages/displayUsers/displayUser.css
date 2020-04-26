@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+
+}
+
+.container-left {
+  float: left;
+  padding-top: 250px;
+  padding-left: 50px;
+}
+
+.container-right {
+  float: right;
+  padding-right: 50px;
+  padding-top: 250px
+}
+
+.pagination {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  
+}
+
+.search {
+  float: right;
+  margin: 20px 20px 0px 0px;
+
+}
