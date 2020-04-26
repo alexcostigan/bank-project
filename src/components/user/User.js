@@ -1,20 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './user.css'
 import faker from 'faker';
 
-const User = (props) => {
+class User extends React.Component {
+    constructor(props){
+        super(props);
+        this.state= {title: 'Display Balance'}
+     }
+    render() {
     return (
-        <div className="box-container">
-                <img src={faker.image.avatar()} />
-                <div className="name">{props.name}</div> 
-                <div className="job">{props.job}</div>
-                <div className="age">{props.age}</div> 
-                <div className="address">{props.address}</div>
-                <div className="city">{props.city}</div>
-                <div className="balance">Bank balance: {props.balance}</div>
+        <div className="profile_container">
+            <div className="image_container">
+                <div className="image">
+                    <img src={faker.image.avatar()} />
+                </div>
+            </div>
+            <div className="title">
+                    <h3>{this.props.name}</h3>
+                    <p>{this.props.age}</p>
+            
+                <div className="text_container">
+                        <h4>{this.props.job}</h4>
+                        {this.props.address}<br />
+                        {this.props.city}<br />
+                    <div className="button">
+                        <button onClick={() => this.setState({title: this.props.balance})}>{this.state.title}</button>
+                    </div>
+                </div>
             
         </div>
+        </div>
+    
     )
+    }
 }
 
 export default User;

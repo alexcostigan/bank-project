@@ -19,15 +19,15 @@ function displayUser() {
       job="Teacher"
       address=" 1 elm road"
       city="London"
-      balance="150£"
-    />
+      balance="£150"
+    /> 
     <User 
        name="Henry Davis"
        age="47"
        job="Doctor"
        address="34 New Drive Lane"
        city="Nottingham"
-       balance="345£"
+       balance="£345"
     />
     </div>
     <div className="container-right">
@@ -37,7 +37,7 @@ function displayUser() {
        job="Restaurant Owner"
        address="55 Meadow Drive"
        city="Manchester"
-       balance="785£"
+       balance="£785"
     />
     <User 
        name="Jenny Young"
@@ -45,7 +45,7 @@ function displayUser() {
        job="Actress"
        address="1 Park Drive"
        city="Glasgow"
-       balance="45£"
+       balance="£45"
     />
     </div>
     <div className="pagination">

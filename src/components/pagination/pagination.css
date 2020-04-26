@@ -1,17 +1,30 @@
 /* Pagination links */
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-  }
+.pagination {
+    margin: 5rem 0;
+    left: 35%;
+    place-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
   
   /* Style the active/current link */
-  .pagination a.active {
-    background-color: dodgerblue;
-    color: white;
+  .pagination a {
+    text-decoration: none;
+    background: #0C6980;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: 1px solid #0C6980;
+    display: inline-block;
+    transition: all 300ms linear;
+  }
+
+  .pagination a:hover {
+    background: #fff;
+    color: #0C6980;
+    font-size: 150%;
   }
   
-  /* Add a grey background color on mouse-over */
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
