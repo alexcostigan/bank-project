@@ -8,9 +8,9 @@ import './displayUser.css'
 function displayUser() {
   return (
     <div>
-    <div className="search">
+    {/* <div className="search">
     <SearchBar />
-    </div>
+    </div> */}
     <Navbar />
     <div className="container-left">
     <User 

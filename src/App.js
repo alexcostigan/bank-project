@@ -1,14 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DisplayUser from './pages/displayUsers/DisplayUser'
+import HomePage  from './pages/HomePage';
 
 
 class App extends React.Component {
   render() {
     return(
       <div className="container">
+        <HomePage />
         {/* <BrowserRouter> */}
-        <DisplayUser />
+        {/* <DisplayUser /> */}
           {/* <Image src={} /> */}
           {/* <NavBar /> */}
           {/* <SearchBar /> */}
@@ -17,7 +19,7 @@ class App extends React.Component {
             <Route  exact path="/users" component={DisplayUser} />
             <Route exact path="/edit" render={ () => <Edit User />}  />
 
-          
+          <
           </Switch> */}
         {/* </BrowserRouter> */}
       </div>

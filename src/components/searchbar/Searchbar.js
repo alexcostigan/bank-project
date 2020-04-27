@@ -1,7 +1,5 @@
 import React from 'react'
 import './search.css'
-import { BsSearch } from 'react-icons/bs';
-
 const Searchbar = () => {
     return (
         <div class="wrap">
