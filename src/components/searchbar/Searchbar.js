@@ -2,11 +2,11 @@ import React from 'react'
 import './search.css'
 const Searchbar = () => {
     return (
-        <div class="wrap">
-        <div class="search">
-           <input type="text" class="searchTerm" placeholder="What are you looking for?" />
-           <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
+        <div className="searchbar-wrap">
+        <div className="search-bar">
+           <input type="text" className="searchbar-text" placeholder="What are you looking for?" />
+           <button type="submit" className="searchbar-Button">
+             <i className="fa fa-search"></i>
           </button>
         </div>
      </div>

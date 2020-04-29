@@ -1,32 +1,23 @@
 import React from 'react'
-import Searchbar from '../searchbar/Searchbar'
 import './displaybox.css'
-
+import background from './background.jpg'
 const DisplayBox = () => {
     return (
         <div>
-        <div className="search-bar">
-        <Searchbar />
-        </div>
-        <div className="display-box">
-            <div>
-                <button className="user-page"><a href="#">User's Page</a></button>
+            <div className="display-box">
+                <img src={background}  className="display-background" />
+                <div className="box-title">
+                    <span className="box-letter-blink">M</span>
+                    <span className="box-letter-2">y</span>
+                    <span className="box-letter-blink">B</span>
+                    <span className="box-letter-1">a</span>
+                    <span className="box-letter-2">n</span>
+                    <span className="box-letter-">k</span>
+                    <span className="box-letter-blink">A</span>
+                    <span className="box-letter-1">p</span>
+                    <span className="box-letter-2">p</span>
+                </div>
             </div>
-            <div>
-                <button className="add"><a href="#">Add New User</a></button>
-            </div>
-            <div class="title">
-                <span class="letter-blink">M</span>
-                <span class="letter-2">y</span>
-                <span class="letter-blink">B</span>
-                <span class="letter-1">a</span>
-                <span class="letter-2">n</span>
-                <span class="letter-">k</span>
-                <span class="letter-blink">A</span>
-                <span class="letter-1">p</span>
-                <span class="letter-2">p</span>
-            </div>
-        </div>
         </div>
     )
 }

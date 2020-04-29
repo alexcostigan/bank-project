@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Pagination from '../../components/pagination/Pagination'
 import './displayUser.css'
-import {userData} from '../../data/Users';
+import {userData4} from '../../data/Users4';
 import faker from 'faker'
 
-function DisplayUser() {
+function DisplayUser4() {
 
-    const allUsers = userData.map( (user) => {
+    const allUsers = userData4.map( (user) => {
       return (
         <>
         <div className="profile_container">
@@ -40,4 +40,4 @@ function DisplayUser() {
   
 }
 
-export default DisplayUser;
+export default DisplayUser4;

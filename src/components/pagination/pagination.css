@@ -14,6 +14,7 @@
   .pagination a {
     text-decoration: none;
     background: #0C6980;
+    font-family: 'Quicksand', sans-serif;
     color: #fff;
     padding: 0.75rem 1rem;
     border: 1px solid #0C6980;

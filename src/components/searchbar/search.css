@@ -1,11 +1,11 @@
-.search {
+.search-bar {
     width: 250px;
     height: 36px;
     padding-top: 10%;
     display: flex;
   }
   
-.searchTerm {
+.searchbar-text {
     width: 100%;
     border: 3px solid #C4DBE0;
     border-right: none;
@@ -14,14 +14,15 @@
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9DBFAF;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
   }
   
-.searchTerm:focus{
+.searchbar-text:focus{
     color: #00A8A8;
   }
   
-.searchButton {
+.searchbar-Button {
     width: 40px;
     height: 36px;
     border: 1px solid rgb(0, 114, 114);
@@ -35,11 +36,11 @@
   }
   
 
-.wrap {
+.searchbar-wrap {
     display: flex;
     width: 30%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 5%;
+    left: 80%;
     transform: translate(-50%, -50%);
 }

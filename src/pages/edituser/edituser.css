@@ -1,0 +1,45 @@
+
+.edit-container {
+    width: 800px;
+    box-sizing: border-box;
+    line-height: 1.4em;
+    background-color: #C4DBE0;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    top: 200px;
+}
+
+.edit-form-wrap {
+    margin: 25px;
+    width: 100%;
+    padding: 30px;
+}
+
+
+.edit-header{
+    position: relative;
+    left: 200px;
+    top: -10px;
+
+}
+
+
+.edit-form-group {
+    display: inline-block;
+    width: 40%;
+    margin: 10px 10px;
+}
+
+.edit-form-group label {
+    display: block;
+}
+
+
+.edit-form-group input {
+    width: 100%;
+    line-height: 2.4em;
+    border: 1px solid #0C6980;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 10px;
+}
