@@ -6,16 +6,34 @@
     border: 2px solid rgb(0, 99, 99);
     border-radius: 10px;
     display: flex; 
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 70%;
     margin-top: 50px;
     font-family: 'Quicksand', sans-serif;
 }
 /* search button */
 
-.searchbox-display{
+.searchbox-city {
     position: relative;
-    top: 50%;
+    right: 0;
+    top: 30px;
+}
+
+.searchbox-alpha {
+    position: relative;
+    right: 0;
+    top: 30px;
+}
+
+.searchbox-age {
+    position: relative;
+    right: 0;
+    top: 30px;
+}
+
+.searchbox-display
+{
+    position: relative;
     left: 50%;
     transform: translate(-50%,-50%);
     height: 60px;
@@ -23,55 +41,39 @@
     line-height:40px;
     padding: 10px;
     border-radius: 60px;
-    font-family: 'Quicksand', sans-serif;
 }
-.searchbox-input{
+
+.searchbox-display:hover > .searchbox-text
+{
+    width: 240px;
+    padding: 0 6px;
+}
+.searchbox-display:hover > .searchbox-button
+{
     background: #C4DBE0;
-    color: #fff;
-    outline: none;
-    border: none;
-    line-height:40px;
-    width: 0px;
-    float: left;
-    font-size:14px;
-    transition: 0.5s ease;
-    font-family: 'Quicksand', sans-serif;
 }
-.searchbox-button{
-    display:flex;
+.searchbox-button
+{
+    background: #C4DBE0;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration:none;
-    background: #C4DBE0;
-    padding: 12px;
-    border-radius: 50%;
-    float: right;
-    color: rgb(0, 114, 114);
-    transition: 0.4s ease;
 }
-
-.search-box:hover > .searchbox-input{
-    width: 240px;
-    margin: 0px 8px;
-}
-
-.searchbox-input:focus{
-    width: 240px;
-    margin: 0px 8px;
-}
-
-.search-box:hover > .searchbox-button{
-    background: #C4DBE0;
-    position: relative;
-    top: -40px;
-}
-
-.searchbox-input:focus + .searchbox-button{
-    background: #C4DBE0;
-    position: relative;
-    top: -40px;
-}
-
-h2 {
+.searchbox-text
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(50, 56, 58);;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
     font-family: 'Quicksand', sans-serif;
 }
