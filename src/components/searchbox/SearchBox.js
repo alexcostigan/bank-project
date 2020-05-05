@@ -9,7 +9,7 @@ const SearchBox = () => {
             <div className="searchbox-city">
                 <div className="searchbox-display">
                     <input type="text" placeholder="Search By City" className="searchbox-text" />
-                    <a href="" className="searchbox-button">
+                    <a href="/src/data/.." className="searchbox-button">
                         <BsSearch />
                     </a>
                 </div>
