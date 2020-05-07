@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Pagination from '../../components/pagination/Pagination'
 import './displayUser.css'
 import {userData4} from '../../data/Users4';
@@ -12,7 +12,7 @@ function DisplayUser4() {
         <div className="profile_container">
             <div className="image_container">
                 <div className="image">
-                    <img src={faker.image.avatar()} />
+                    <img src={faker.image.avatar()}  alt="avatar" />
                 </div>
             </div>
             <div className="title">

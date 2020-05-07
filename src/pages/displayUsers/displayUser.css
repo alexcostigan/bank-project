@@ -5,6 +5,15 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  color: inherit;
+}
+
 .display-user-container-left {
   position: relative;
   left: -30%;

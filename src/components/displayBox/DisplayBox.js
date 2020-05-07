@@ -5,7 +5,7 @@ const DisplayBox = () => {
     return (
         <div className="display-box">
                 <div className="display-container">
-                    <img src={background}  className="display-background" />
+                    <img src={background}  className="display-background"  alt="avatar" />
                         <div className="box-title">
                             <span className="box-letter-blink">M</span>
                             <span className="box-letter-2">y</span>

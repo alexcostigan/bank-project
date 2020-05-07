@@ -1,24 +1,34 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Pagination from '../../components/pagination/Pagination'
 import './displayUser.css'
-import { userData } from '../../data/Users';
+
 import { Link } from 'react-router-dom'
 import faker from 'faker';
+import { connect } from 'react-redux'
+import { editingUser } from '../../actions/editAction'
+import { getUserData } from '../../actions/getAction'
 
-function DisplayUser() {
+function DisplayUser(props) {
+  console.log(props)
 
-    const allUsers = userData.map( (user) => {
+  // return (
+  //   <button onClick={props.getUserData}>button</button>
+  // )
+    const allUsers = props.userProps && props.userProps.allUsers.map( (user) => {
+   // const allUsers = userData.map( (user) => {
       return (
         <>
+          <Link to={`/edit/${user.id}`} className="link">
           <div className="profile_container">
+
               <div className="image_container">
                   <div className="image">
-                      <img src={faker.image.avatar()} />
+                      <img src={faker.image.avatar()} alt="avatar" />
                   </div>
               </div>
               
               <div className="title">
-                <Link to={`/edit/${user.id}`}><h3>{user.Name}</h3></Link>
+                <h3>{user.Name}</h3>
                       <p>{user.Age}</p>
               
                   <div className="text_container">
@@ -29,6 +39,7 @@ function DisplayUser() {
               
               </div>
           </div>
+          </Link>
           <Pagination />
         </>
       )
@@ -38,4 +49,8 @@ function DisplayUser() {
   return allUsers 
 }
 
-export default DisplayUser;
+const mapStateToProps = state => ({
+    userProps: state.allUsersState
+})
+
+export default connect(mapStateToProps, { getUserData } )(DisplayUser)
