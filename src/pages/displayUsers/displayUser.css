@@ -84,12 +84,28 @@ h4 {
     margin: auto;
     position: relative;
     bottom: -30px;
-    justify-content: center;
     padding: 5px;
     font-family: 'Quicksand', sans-serif;
+
 }
 
-.display-button:hover{
+.display-button-one {
+  background-color:#00A8A8;
+  color: white;
+  font-size: 15px;
+  border-radius:20px;
+  height: auto;
+  width:  140px;
+  margin: auto;
+  position: relative;
+  bottom: -30px;
+  left: 90px;
+  padding: 5px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.display-button:hover, .display-button-one:hover, {
 	background-color: white;
 	color:#00A8A8;
 	border:2px solid rgb(0, 114, 114);

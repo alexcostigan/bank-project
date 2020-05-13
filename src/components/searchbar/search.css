@@ -44,3 +44,20 @@
     left: 80%;
     transform: translate(-50%, -50%);
 }
+
+#overlay {
+  padding-left: 3px;
+  margin: 0;
+  position: absolute;
+  left: 75%;
+  top: 120px;
+  width: 10%;
+  z-index: 2;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none; 
+}

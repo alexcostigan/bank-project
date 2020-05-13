@@ -10,11 +10,9 @@ import HomePage  from './pages/homepage/HomePage';
 import EditUser from './pages/edituser/EditUser';
 import Searchbar from './components/searchbar/Searchbar';
 import Navbar from './components/navbar/Navbar'
-import { userData } from './data/Users';
 import { getAllUsers } from './actions/getAction'
 import { Provider } from 'react-redux';
 import store from './store'
-
 
 class App extends React.Component {
 
@@ -37,6 +35,7 @@ class App extends React.Component {
                 <Route exact path="/users5" component={DisplayUser5} />
                 <Route exact path="/users6" component={DisplayUser6} />
                 <Route path="/edit/:id" component={EditUser} />
+                
               </Switch>
             </BrowserRouter>
       </div>

@@ -25,7 +25,7 @@ function DisplayUser6() {
                         {user.City}<br />
 
                     
-                  <button className="display-button">Display Balance</button>
+                        <button className="display-button">{user.Balance}</button>
                 </div>
             
         </div>

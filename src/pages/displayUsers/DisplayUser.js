@@ -1,21 +1,13 @@
 import React from 'react'
 import Pagination from '../../components/pagination/Pagination'
 import './displayUser.css'
-
 import { Link } from 'react-router-dom'
 import faker from 'faker';
 import { connect } from 'react-redux'
-import { editingUser } from '../../actions/editAction'
 import { getUserData } from '../../actions/getAction'
 
 function DisplayUser(props) {
-  console.log(props)
-
-  // return (
-  //   <button onClick={props.getUserData}>button</button>
-  // )
-    const allUsers = props.userProps && props.userProps.allUsers.map( (user) => {
-   // const allUsers = userData.map( (user) => {
+  const allUsers = props.userProps && props.userProps.allUsers.map( (user) => {
       return (
         <>
           <Link to={`/edit/${user.id}`} className="link">
@@ -36,7 +28,7 @@ function DisplayUser(props) {
                           {user.Address}<br />
                           {user.City}<br />
                   </div>
-              
+                <button className="display-button-one">{user.Balance}</button>
               </div>
           </div>
           </Link>
@@ -45,7 +37,7 @@ function DisplayUser(props) {
       )
     })
   
-  
+
   return allUsers 
 }
 

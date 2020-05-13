@@ -6,27 +6,22 @@ import { connect } from 'react-redux'
 import { editingUser } from '../../actions/editAction'
 
 const EditUser = ({ match }) => {
-    console.log(match)
+
     const userId = match.params.id
-    // console.log(props)
-    // return (
-    //     <button type="submit" onClick={props.editingUser}>button</button>
-    // )
     const users = userData.map( (user) => {
         if( userId === user.id.toString()) {
             return (
             
                 <div className="edit-container">
                 
-                    <div className="edit-form-wrap">
+                    <form className="edit-form-wrap">
 
                         <header className="edit-header">
                             <h3>Edit User</h3>
                         </header>
                         <div className="edit-form-group">
                             <label htmlFor="name">Name</label>
-                            <input type="text" name="last-name" placeholder={user.Name}
-                            /> 
+                            <input type="text" name="last-name" placeholder={user.Name}/> 
                             
                         </div>
                         <div className="edit-form-group">
@@ -50,8 +45,8 @@ const EditUser = ({ match }) => {
                             <label htmlFor="balance">Balance</label>
                             <input type="number" name="balance" placeholder={user.Balance}  />
                         </div>
-                        
-                    </div>
+                        <button onSubmit={editingUser}>Submit</button>
+                    </form>
                 </div>
                
             )
@@ -62,5 +57,8 @@ const EditUser = ({ match }) => {
     return users
 }
 
+const mapStateToProps = state => ({
+    editProps: state.editingUserState
+})
 
-export default connect(null, { editingUser } )(EditUser)
+export default connect(mapStateToProps, { editingUser } )(EditUser)
