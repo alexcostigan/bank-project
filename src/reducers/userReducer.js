@@ -5,17 +5,6 @@ const initialState = null
 
 export default (state = initialState, action) => {
     switch(action.type) {
-        case EDIT_USER:
-            const index = state.findIndex(item => item.id === action.payload.id);
-            if (index > -1){
-             return {
-                  ...state,
-                      ...state.slice(0, index),
-                      allUsers: action.payload,
-                      ...state.slice(index + 1),
-                  }
-             }
-            
         case GET_USER_DATA:
             console.log(state);
             return {
@@ -26,6 +15,12 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 allUsers: action.payload
+            }
+        case EDIT_USER:
+            console.log(action.payload)
+            return {
+                ...state,
+                editingUser: action.payload
             }
         default:
             return state;

@@ -6,7 +6,7 @@ export const editingUser = (userData) => {
         console.log("edit User");
         dispatch({
             type: EDIT_USER,
-            payload: userData.id
+            payload: userData
         })
     }
 }

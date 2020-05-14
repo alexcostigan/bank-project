@@ -14,7 +14,7 @@ class SearchBox extends React.Component{
         <div className="searchbox">
 
             <SearchCity />
-            <SearchAlpha />
+            
             <SearchAge />
 
         </div>
